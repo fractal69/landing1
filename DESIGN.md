@@ -6,36 +6,32 @@
 
 **Creative North Star: "The Textile Atelier"**
 
-Cortinas Sergio's visual language is rooted in the warmth of Colombian craftsmanship and the precision of architectural design. The system pairs the richness of deep emerald and gold with the airy lightness of ivory, creating spaces that feel both luxurious and approachable. Full-bleed photography carries the proof — real installations, real textures, real results. Typography is generous and editorial, built for an older audience that values clarity and elegance.
+Cortinas Sergio's visual language is grounded in architectural minimalism and the restrained elegance of a luxury interior design atelier. Neutral tones — ivory, beige, charcoal — form the foundation, creating quiet, spacious compositions where photography and craft take center stage. Deep Emerald appears only as a signature accent: a thin line, a deliberate mark. Gold provides warmth and luxury. Typography is generous and editorial, built for an older audience that values clarity and refinement.
 
 **Key Characteristics:**
-- Minimalist but warm — never cold or sterile
-- Photography-led; imagery carries the narrative, chrome does not
-- Generous scale and whitespace for legibility
-- Gold accents as deliberate punctuation, never as surface decoration
-- Architectural structure with soft, natural materiality
+- Neutral-dominant palette; color is scarce and intentional
+- Photography-led; imagery carries the narrative, not decorative chrome
+- Generous whitespace as a design material — the page breathes
+- Gold accents as deliberate punctuation, never as surface fill
+- Architectural structure with warm, tactile materiality
 
 ## Colors
 
-The palette draws from Colombia's natural and architectural heritage: emerald from the coffee region, gold from colonial altarpieces, ivory from traditional hacienda walls.
+The palette is anchored in sophisticated neutrals. Deep Emerald and Satin Gold are reserved as scarce, deliberate accents — the brand equivalent of a signature on a white page.
 
-### Primary
-- **Deep Emerald** (#1F6A3A): The structural brand color. Used for the header background, dark section backgrounds, and as the dominant field color. It conveys quality, trust, and natural richness.
-- **Forest Green** (#184C32): A deeper, more introspective variant for footer backgrounds and the hero overlay gradient. Adds depth without competing with the primary.
+### Primary (Neutrals)
+- **Ivory** (#F7F5F0): The dominant canvas. Page background and default section background. Warm, timeless, never clinical.
+- **Graphite** (#2F3133): The structural dark. Used for dark section backgrounds, footer, primary text, icon circles, and the hero overlay. It replaces green as the page's weight and anchor.
+- **Linen Beige** (#E8E0D2): Secondary neutral for alternation (gallery section). One step warmer than Ivory. Used to create section rhythm without color.
+- **Stone Gray** (#B8B8B4): Subtle borders, dividers, and secondary text. Quiet infrastructure.
 
-### Accent
-- **Satin Gold** (#B8923E): The accent voice. Used for phone CTAs, the hero tag label, section label text, hover states, and the scroll indicator. Applied sparingly — its rarity is the point. Never used as a background fill for large areas.
+### Signature Accent
+- **Deep Emerald** (#1F6A3A): No longer a structural color — now a brand signature. Appears only as a thin underline beneath section titles, a 3px border on the footer, and the logo (inherent). Its scarcity is its recognition. Never used as a background or field color.
 
-### Neutral
-- **Ivory** (#F7F5F0): The page background and canvas. Warm, timeless, never clinical white. Used as the default section background.
-- **Linen Beige** (#E8E0D2): Secondary neutral for alternation (the gallery section background). One step warmer than Ivory.
-- **Graphite** (#2F3133): Primary text color. High-contrast against Ivory, slightly softened from pure black for readability.
-- **Stone Gray** (#B8B8B4): Subtle borders, dividers, and secondary text elements.
+### Luxury Accent
+- **Satin Gold** (#B8923E): The action voice. Used for phone CTAs (filled), hero tag, section labels, scroll indicator, service card icons, and link hover states. Applied sparingly — its rarity is its power.
 
-### Supporting
-- **Sage Green** (#A8B69C): Reserved for potential future supporting roles (badges, tags, decorative elements). Not yet deployed in the initial build.
-
-**The Gold Touch Rule.** Satin Gold covers less than 5% of any viewport. It exists to draw the eye to the action — the phone call — and to signal quality without shouting.
+**The Scarce Signature Rule.** Deep Emerald appears on less than 1% of any viewport's surface area. It is a mark, not a field. If emerald is recognizable at that dose, the brand is working.
 
 ## Typography
 
@@ -64,9 +60,9 @@ On desktop, alternating sections use a 2-column split (about, showroom) at a 4re
 ## Elevation & Depth
 
 The system is fundamentally flat. Depth is created through:
-- **Tonal layering**: dark backgrounds (Forest Green, Deep Emerald) against light ones (Ivory, Linen Beige).
-- **Photographic depth**: full-bleed imagery with gradient overlays creates atmosphere without artificial shadows.
-- **The scrolled header** receives a subtle neutral shadow (0 2px 16px rgba(0,0,0,0.08)) — the only shadow in the system. It signals that the header is above the page content.
+- **Tonal layering**: dark backgrounds (Graphite) against light ones (Ivory, Linen Beige).
+- **Photographic depth**: full-bleed imagery with dark charcoal gradient overlays creates atmosphere without artificial shadows.
+- **The scrolled header** receives a subtle neutral shadow (0 2px 20px rgba(0,0,0,0.06)) — the only shadow in the system. It signals that the header is above the page content.
 
 ## Shapes
 
@@ -83,15 +79,15 @@ The system is fundamentally flat. Depth is created through:
 - **Shape:** Pill (100px border-radius).
 - **Primary (Gold CTA):** Satin Gold (#B8923E) background, white text, font-weight 600, 1rem-1.125rem, padding 1rem 2rem, min-height 3.5rem. Hover: darken to #a07e2e with -1px translateY. Transition: 0.25s background, 0.15s transform.
 - **Outline (Ghost):** Transparent background, white text, 2px solid border at 30% white opacity. Hover: gold border (#B8923E) with 10% gold background.
-- **Phone (White CTA in dark sections):** White background, Deep Emerald (#1F6A3A) text, 1.5rem font-size, pill shape. Hover: translateY(-2px) with elevated shadow.
+- **Phone (White CTA in dark sections):** White background, Graphite (#2F3133) text, 1.5rem font-size, pill shape. Hover: translateY(-2px) with elevated shadow.
 
 ### Navigation (Header)
-- **Style:** Fixed top, transparent at rest. Transitions to solid Deep Emerald (#1F6A3A) with neutral shadow on scroll past 80px.
-- **Logo:** Left-aligned, 2.5rem height, with brand name in Playfair Display 600 (hidden on mobile <640px).
-- **Phone CTA:** Right-aligned, gold-outlined pill button. Always visible, always tappable.
+- **Style:** Fixed top, transparent at rest (white text, gold-outlined phone). Transitions to solid white (#fff) with neutral shadow on scroll past 80px — brand name turns Graphite, phone becomes gold-filled.
+- **Logo:** Left-aligned, 2.5rem height, with brand name in Playfair Display 600 (hidden on mobile <640px, white at rest, Graphite on scroll).
+- **Phone CTA:** Right-aligned. At rest: gold-outlined on transparent. On scroll: gold-filled on white. Always visible, always tappable.
 
 ### Service Cards
-- **Background:** `rgba(255,255,255,0.06)` with `backdrop-filter: blur(4px)` on the dark Emerald section.
+- **Background:** `rgba(255,255,255,0.06)` with `backdrop-filter: blur(4px)` on the dark Graphite section.
 - **Shape:** 16px border-radius.
 - **Icon:** Gold-icon in a 3.5rem circle with 20% gold background.
 - **Hover:** Background lightens to 10% white, card lifts 4px.
@@ -105,12 +101,14 @@ The system is fundamentally flat. Depth is created through:
 
 ### Do:
 - **Do** let photography carry the proof. A room photograph is worth more than any headline.
-- **Do** use Satin Gold sparingly — on CTAs, section labels, and the scroll indicator. Its rarity is its power.
-- **Do** use generous whitespace, especially above headings. The audience needs visual breathing room.
+- **Do** use Satin Gold sparingly — on CTAs, section labels, service icons, and the scroll indicator. Its rarity is its power.
+- **Do** treat Deep Emerald as a signature mark: a thin underline, a footer border, the logo. If it covers more than 1% of the viewport, it is overused.
+- **Do** use generous whitespace, especially above headings. Neutral space is the primary design material.
 - **Do** make the phone number the most prominent interactive element on every viewport.
-- **Do** use the editorial typography scale: one bold headline per section, then step down.
+- **Do** use the editorial typography scale: one bold headline per section, then step down. A decorative underline in the accent color marks each section heading.
 
 ### Don't:
+- **Don't** use Deep Emerald as a background, button fill, or structural field color. It is a mark, not a surface.
 - **Don't** use gradients on text. Emphasis comes from weight or size.
 - **Don't** use glass or blur effects as decoration. The service cards' backdrop-filter is functional — it creates depth on a dark field.
 - **Don't** use colored border-left/right lines on cards or callouts.
