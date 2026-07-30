@@ -730,6 +730,29 @@
           justify-content: center;
         }
       }
+
+      @media (prefers-reduced-motion: no-preference) {
+        .hero-tag,
+        .hero h1,
+        .hero p,
+        .btn-primary,
+        .btn-outline,
+        .hero-scroll,
+        .about-image,
+        .about-trust-item,
+        .section-title,
+        .gallery-grid img,
+        .service-card,
+        .showroom-image,
+        .showroom-contact a,
+        .cta-phone,
+        .cta-whatsapp,
+        .footer-brand,
+        .footer-links,
+        .footer-bottom {
+          opacity: 0;
+        }
+      }
     </style>
   </head>
   <body>
@@ -1155,21 +1178,114 @@
     </footer>
 
     <script>
-      const header = document.getElementById("header");
-      let lastScroll = 0;
-      window.addEventListener(
-        "scroll",
-        () => {
-          const y = window.scrollY;
-          if (y > 80) {
-            header.classList.add("scrolled");
-          } else {
-            header.classList.remove("scrolled");
+      var header = document.getElementById("header");
+      window.addEventListener("scroll", function () {
+        var y = window.scrollY;
+        header.classList.toggle("scrolled", y > 80);
+      }, { passive: true });
+
+      (function () {
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+        var isMobile = window.innerWidth < 768;
+
+        function anim(el, fromY, dur, delay) {
+          if (!el) return;
+          delay = delay || 0;
+          var kf = [{ opacity: 0 }, { opacity: 1 }];
+          if (fromY) {
+            kf[0].transform = "translateY(" + fromY + "px)";
+            kf[1].transform = "none";
           }
-          lastScroll = y;
-        },
-        { passive: true },
-      );
+          var a = el.animate(kf, {
+            duration: dur,
+            delay: delay,
+            easing: "ease-out",
+            fill: "forwards"
+          });
+          a.onfinish = function () {
+            el.style.opacity = "1";
+            if (fromY) el.style.transform = "";
+            a.cancel();
+          };
+        }
+
+        anim(document.querySelector(".hero h1"), isMobile ? 20 : 30, isMobile ? 700 : 1000);
+        anim(document.querySelector(".hero-tag"), isMobile ? 10 : 15, isMobile ? 250 : 350);
+        anim(document.querySelector(".hero p"), 0, isMobile ? 250 : 350);
+        anim(document.querySelector(".btn-primary"), isMobile ? 10 : 15, 280, isMobile ? 80 : 180);
+        anim(document.querySelector(".btn-outline"), isMobile ? 10 : 15, 280, isMobile ? 150 : 260);
+        anim(document.querySelector(".hero-scroll"), 0, isMobile ? 250 : 350, isMobile ? 200 : 350);
+
+        function observe(sel, opts) {
+          opts = opts || {};
+          var els = document.querySelectorAll(sel);
+          if (!els.length) return;
+          var y = opts.y || 25;
+          var dur = opts.dur || 600;
+          var stg = opts.stg || 0;
+          var thresh = opts.thresh || 0.15;
+
+          if (stg && els.length > 1) {
+            var p = els[0].parentElement;
+            var o = new IntersectionObserver(function (e) {
+              if (e[0].isIntersecting) {
+                for (var i = 0; i < els.length; i++) {
+                  (function (idx) {
+                    var el = els[idx];
+                    setTimeout(function () {
+                      var a = el.animate([
+                        { opacity: 0, transform: "translateY(" + y + "px)" },
+                        { opacity: 1, transform: "none" }
+                      ], { duration: dur, easing: "ease-out", fill: "forwards" });
+                      a.onfinish = function () {
+                        el.style.opacity = "1";
+                        el.style.transform = "";
+                        a.cancel();
+                      };
+                    }, idx * stg * 1000);
+                  })(i);
+                }
+                o.disconnect();
+              }
+            }, { threshold: thresh });
+            o.observe(p);
+          } else {
+            for (var i = 0; i < els.length; i++) {
+              (function (el) {
+                var o = new IntersectionObserver(function (e) {
+                  if (e[0].isIntersecting) {
+                    var a = el.animate([
+                      { opacity: 0, transform: "translateY(" + y + "px)" },
+                      { opacity: 1, transform: "none" }
+                    ], { duration: dur, easing: "ease-out", fill: "forwards" });
+                    a.onfinish = function () {
+                      el.style.opacity = "1";
+                      el.style.transform = "";
+                      a.cancel();
+                    };
+                    o.disconnect();
+                  }
+                }, { threshold: thresh });
+                o.observe(el);
+              })(els[i]);
+            }
+          }
+        }
+
+        observe(".about-image");
+        observe(".about-trust-item", { stg: 0.12, dur: 400, y: 15 });
+        observe(".section-title");
+        observe(".gallery-grid img", { stg: 0.1, dur: 450, y: 20 });
+        observe(".service-card", { stg: 0.15, dur: 500 });
+        observe(".showroom-image", { dur: 500 });
+        observe(".showroom-contact a", { stg: 0.1, dur: 400, y: 10 });
+        observe(".cta-phone", { dur: 400, y: 15 });
+        observe(".cta-whatsapp", { dur: 400, y: 15 });
+        observe(".footer-brand", { dur: 450 });
+        observe(".footer-links", { dur: 450, y: 10 });
+        observe(".footer-bottom", { dur: 400, y: 10 });
+      })();
     </script>
   </body>
 </html>
