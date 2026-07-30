@@ -92,16 +92,36 @@
         width: 100%;
         z-index: 100;
         padding: 0.75rem 0;
+
+        background: rgba(20, 20, 20, 0.28);
+        -webkit-backdrop-filter: blur(22px) saturate(1.35);
+        backdrop-filter: blur(22px) saturate(1.35);
+
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+        box-shadow:
+          0 8px 32px rgba(0, 0, 0, 0.12),
+          inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
         transition:
-          background 0.3s ease,
-          box-shadow 0.3s ease;
+          background 0.35s ease,
+          backdrop-filter 0.35s ease,
+          -webkit-backdrop-filter 0.35s ease,
+          border-color 0.35s ease,
+          box-shadow 0.35s ease;
       }
+
       .header.scrolled {
-        background: #fff;
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
-      }
-      .header.scrolled .header-logo span {
-        color: #202020;
+        background: rgba(20, 20, 20, 0.45);
+
+        -webkit-backdrop-filter: blur(28px) saturate(1.5);
+        backdrop-filter: blur(28px) saturate(1.5);
+
+        border-bottom: 1px solid rgba(160, 125, 79, 0.22);
+
+        box-shadow:
+          0 12px 40px rgba(0, 0, 0, 0.22),
+          inset 0 1px 0 rgba(255, 255, 255, 0.07);
       }
       .header.scrolled .header-phone {
         background: #a07d4f;
@@ -109,8 +129,8 @@
         color: #fff;
       }
       .header.scrolled .header-phone:hover {
-        background: #8B6D45;
-        border-color: #8B6D45;
+        background: #8b6d45;
+        border-color: #8b6d45;
       }
       .header .container {
         display: flex;
@@ -244,7 +264,7 @@
         min-height: 3.5rem;
       }
       .btn-primary:hover {
-        background: #8B6D45;
+        background: #8b6d45;
         transform: translateY(-1px);
       }
       .btn-outline {
@@ -326,12 +346,12 @@
         font-weight: 500;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #A07D4F;
+        color: #a07d4f;
         margin-bottom: 1rem;
       }
       .section-dark .section-label,
       .hero-tag {
-        color: #A07D4F;
+        color: #a07d4f;
       }
       .section-title {
         font-family: "Playfair Display", serif;
@@ -778,7 +798,7 @@
                 d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
               />
             </svg>
-            302 234 4884
+            
           </a>
         </div>
       </div>
@@ -794,7 +814,7 @@
       <div class="hero-overlay"></div>
       <div class="container">
         <div class="hero-content">
-          <span class="hero-tag">Cortinas a medida con instalación</span>
+          <span class="hero-tag">ONDA SERENA</span>
           <h1>Elegancia que transforma tu hogar</h1>
           <p>
             Cortinas de la más alta calidad, diseñadas a la medida de tus
@@ -867,7 +887,7 @@
                 style="
                   grid-column: 1 / -1;
                   font-size: 0.8rem;
-                  color: #A99E90;
+                  color: #a99e90;
                   text-align: center;
                   margin-top: 0.5rem;
                 "
@@ -1179,13 +1199,18 @@
 
     <script>
       var header = document.getElementById("header");
-      window.addEventListener("scroll", function () {
-        var y = window.scrollY;
-        header.classList.toggle("scrolled", y > 80);
-      }, { passive: true });
+      window.addEventListener(
+        "scroll",
+        function () {
+          var y = window.scrollY;
+          header.classList.toggle("scrolled", y > 80);
+        },
+        { passive: true },
+      );
 
       (function () {
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+          return;
 
         var isMobile = window.innerWidth < 768;
 
@@ -1201,7 +1226,7 @@
             duration: dur,
             delay: delay,
             easing: "ease-out",
-            fill: "forwards"
+            fill: "forwards",
           });
           a.onfinish = function () {
             el.style.opacity = "1";
@@ -1210,12 +1235,35 @@
           };
         }
 
-        anim(document.querySelector(".hero h1"), isMobile ? 20 : 30, isMobile ? 700 : 1000);
-        anim(document.querySelector(".hero-tag"), isMobile ? 10 : 15, isMobile ? 250 : 350);
+        anim(
+          document.querySelector(".hero h1"),
+          isMobile ? 20 : 30,
+          isMobile ? 700 : 1000,
+        );
+        anim(
+          document.querySelector(".hero-tag"),
+          isMobile ? 10 : 15,
+          isMobile ? 250 : 350,
+        );
         anim(document.querySelector(".hero p"), 0, isMobile ? 250 : 350);
-        anim(document.querySelector(".btn-primary"), isMobile ? 10 : 15, 280, isMobile ? 80 : 180);
-        anim(document.querySelector(".btn-outline"), isMobile ? 10 : 15, 280, isMobile ? 150 : 260);
-        anim(document.querySelector(".hero-scroll"), 0, isMobile ? 250 : 350, isMobile ? 200 : 350);
+        anim(
+          document.querySelector(".btn-primary"),
+          isMobile ? 10 : 15,
+          280,
+          isMobile ? 80 : 180,
+        );
+        anim(
+          document.querySelector(".btn-outline"),
+          isMobile ? 10 : 15,
+          280,
+          isMobile ? 150 : 260,
+        );
+        anim(
+          document.querySelector(".hero-scroll"),
+          0,
+          isMobile ? 250 : 350,
+          isMobile ? 200 : 350,
+        );
 
         function observe(sel, opts) {
           opts = opts || {};
@@ -1228,45 +1276,67 @@
 
           if (stg && els.length > 1) {
             var p = els[0].parentElement;
-            var o = new IntersectionObserver(function (e) {
-              if (e[0].isIntersecting) {
-                for (var i = 0; i < els.length; i++) {
-                  (function (idx) {
-                    var el = els[idx];
-                    setTimeout(function () {
-                      var a = el.animate([
-                        { opacity: 0, transform: "translateY(" + y + "px)" },
-                        { opacity: 1, transform: "none" }
-                      ], { duration: dur, easing: "ease-out", fill: "forwards" });
+            var o = new IntersectionObserver(
+              function (e) {
+                if (e[0].isIntersecting) {
+                  for (var i = 0; i < els.length; i++) {
+                    (function (idx) {
+                      var el = els[idx];
+                      setTimeout(
+                        function () {
+                          var a = el.animate(
+                            [
+                              {
+                                opacity: 0,
+                                transform: "translateY(" + y + "px)",
+                              },
+                              { opacity: 1, transform: "none" },
+                            ],
+                            {
+                              duration: dur,
+                              easing: "ease-out",
+                              fill: "forwards",
+                            },
+                          );
+                          a.onfinish = function () {
+                            el.style.opacity = "1";
+                            el.style.transform = "";
+                            a.cancel();
+                          };
+                        },
+                        idx * stg * 1000,
+                      );
+                    })(i);
+                  }
+                  o.disconnect();
+                }
+              },
+              { threshold: thresh },
+            );
+            o.observe(p);
+          } else {
+            for (var i = 0; i < els.length; i++) {
+              (function (el) {
+                var o = new IntersectionObserver(
+                  function (e) {
+                    if (e[0].isIntersecting) {
+                      var a = el.animate(
+                        [
+                          { opacity: 0, transform: "translateY(" + y + "px)" },
+                          { opacity: 1, transform: "none" },
+                        ],
+                        { duration: dur, easing: "ease-out", fill: "forwards" },
+                      );
                       a.onfinish = function () {
                         el.style.opacity = "1";
                         el.style.transform = "";
                         a.cancel();
                       };
-                    }, idx * stg * 1000);
-                  })(i);
-                }
-                o.disconnect();
-              }
-            }, { threshold: thresh });
-            o.observe(p);
-          } else {
-            for (var i = 0; i < els.length; i++) {
-              (function (el) {
-                var o = new IntersectionObserver(function (e) {
-                  if (e[0].isIntersecting) {
-                    var a = el.animate([
-                      { opacity: 0, transform: "translateY(" + y + "px)" },
-                      { opacity: 1, transform: "none" }
-                    ], { duration: dur, easing: "ease-out", fill: "forwards" });
-                    a.onfinish = function () {
-                      el.style.opacity = "1";
-                      el.style.transform = "";
-                      a.cancel();
-                    };
-                    o.disconnect();
-                  }
-                }, { threshold: thresh });
+                      o.disconnect();
+                    }
+                  },
+                  { threshold: thresh },
+                );
                 o.observe(el);
               })(els[i]);
             }
