@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--
   Direction contract: Cortinas Sergio Landing Page
 
@@ -25,861 +25,1149 @@
   on older devices.
 -->
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cortinas Sergio — Cortinas a medida con instalación profesional en Colombia</title>
-<meta name="description" content="Cortinas Sergio: cortinas a medida con instalación profesional en Colombia. Visítanos en nuestro showroom o llámanos al 302 234 4884.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
-<style>
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body {
-  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
-  font-size: 1.125rem;
-  line-height: 1.6;
-  color: #2F3133;
-  background: #F7F5F0;
-  -webkit-font-smoothing: antialiased;
-}
-img { max-width: 100%; height: auto; display: block; }
-a { color: inherit; text-decoration: none; }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Cortinas Sergio — Cortinas a medida con instalación profesional en
+      Colombia
+    </title>
+    <meta
+      name="description"
+      content="Cortinas Sergio: cortinas a medida con instalación profesional en Colombia. Visítanos en nuestro showroom o llámanos al 302 234 4884."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+      }
+      body {
+        font-family:
+          "Noto Sans",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.6;
+        color: #2f3133;
+        background: #f7f5f0;
+        -webkit-font-smoothing: antialiased;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  padding: 0.75rem 0;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-.header.scrolled {
-  background: #fff;
-  box-shadow: 0 2px 20px rgba(0,0,0,0.06);
-}
-.header.scrolled .header-logo span {
-  color: #2F3133;
-}
-.header.scrolled .header-phone {
-  background: #B8923E;
-  border-color: #B8923E;
-  color: #fff;
-}
-.header.scrolled .header-phone:hover {
-  background: #a07e2e;
-  border-color: #a07e2e;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header-logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-.header-logo img {
-  height: 2.5rem;
-  width: auto;
-  border-radius: 2px;
-}
-.header-logo span {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #fff;
-}
-.header-cta {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.header-phone {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  padding: 0.5rem 1.25rem;
-  border: 2px solid #B8923E;
-  border-radius: 100px;
-  transition: background 0.2s;
-}
-.header-phone:hover {
-  background: rgba(184,146,62,0.15);
-}
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 0.75rem 0;
+        transition:
+          background 0.3s ease,
+          box-shadow 0.3s ease;
+      }
+      .header.scrolled {
+        background: #fff;
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+      }
+      .header.scrolled .header-logo span {
+        color: #2f3133;
+      }
+      .header.scrolled .header-phone {
+        background: #b8923e;
+        border-color: #b8923e;
+        color: #fff;
+      }
+      .header.scrolled .header-phone:hover {
+        background: #a07e2e;
+        border-color: #a07e2e;
+      }
+      .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header-logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+      .header-logo img {
+        height: 2.5rem;
+        width: auto;
+        border-radius: 2px;
+      }
+      .header-logo span {
+        font-family: "Playfair Display", serif;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #fff;
+      }
+      .header-cta {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      .header-phone {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        padding: 0.5rem 1.25rem;
+        border: 2px solid #b8923e;
+        border-radius: 100px;
+        transition: background 0.2s;
+      }
+      .header-phone:hover {
+        background: rgba(184, 146, 62, 0.15);
+      }
 
-.hero {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  color: #fff;
-  overflow: hidden;
-}
-.hero-bg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-}
-.hero-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero-overlay {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(
-    135deg,
-    rgba(18,18,20,0.8) 0%,
-    rgba(47,49,51,0.65) 40%,
-    rgba(47,49,51,0.5) 100%
-  );
-}
-.hero .container {
-  position: relative;
-  z-index: 2;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-}
-.hero-content {
-  max-width: 720px;
-}
-.hero-tag {
-  display: inline-block;
-  font-size: 0.875rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #B8923E;
-  margin-bottom: 1.5rem;
-  padding: 0.4rem 1rem;
-  border: 1px solid rgba(184,146,62,0.4);
-  border-radius: 100px;
-}
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-  margin-bottom: 1.5rem;
-}
-.hero p {
-  font-size: clamp(1.125rem, 1.8vw, 1.35rem);
-  line-height: 1.7;
-  color: rgba(255,255,255,0.85);
-  max-width: 600px;
-  margin-bottom: 2.5rem;
-}
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-}
-.btn-primary {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #fff;
-  background: #B8923E;
-  padding: 1rem 2rem;
-  border-radius: 100px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.25s, transform 0.15s;
-  min-height: 3.5rem;
-}
-.btn-primary:hover {
-  background: #a07e2e;
-  transform: translateY(-1px);
-}
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
-  padding: 0.875rem 1.75rem;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-radius: 100px;
-  transition: border-color 0.2s, background 0.2s;
-  min-height: 3.5rem;
-}
-.btn-outline:hover {
-  border-color: #B8923E;
-  background: rgba(184,146,62,0.1);
-}
-.hero-scroll {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
-  width: 2rem;
-  height: 3rem;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-radius: 1rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: 0.5rem;
-  animation: float 2.5s ease-in-out infinite;
-}
-.hero-scroll::after {
-  content: '';
-  width: 4px;
-  height: 8px;
-  background: #B8923E;
-  border-radius: 2px;
-  animation: scrollDot 2s ease-in-out infinite;
-}
-@keyframes float {
-  0%, 100% { transform: translateX(-50%) translateY(0); }
-  50% { transform: translateX(-50%) translateY(6px); }
-}
-@keyframes scrollDot {
-  0%, 100% { opacity: 1; transform: translateY(0); }
-  50% { opacity: 0.3; transform: translateY(8px); }
-}
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        overflow: hidden;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+      }
+      .hero-bg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+          135deg,
+          rgba(18, 18, 20, 0.8) 0%,
+          rgba(47, 49, 51, 0.65) 40%,
+          rgba(47, 49, 51, 0.5) 100%
+        );
+      }
+      .hero .container {
+        position: relative;
+        z-index: 2;
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+      }
+      .hero-content {
+        max-width: 720px;
+      }
+      .hero-tag {
+        display: inline-block;
+        font-size: 0.875rem;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #b8923e;
+        margin-bottom: 1.5rem;
+        padding: 0.4rem 1rem;
+        border: 1px solid rgba(184, 146, 62, 0.4);
+        border-radius: 100px;
+      }
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+        font-weight: 500;
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        margin-bottom: 1.5rem;
+      }
+      .hero p {
+        font-size: clamp(1.125rem, 1.8vw, 1.35rem);
+        line-height: 1.7;
+        color: rgba(255, 255, 255, 0.85);
+        max-width: 600px;
+        margin-bottom: 2.5rem;
+        font-weight: 300;
+      }
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+      }
+      .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #fff;
+        background: #b8923e;
+        padding: 1rem 2rem;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition:
+          background 0.25s,
+          transform 0.15s;
+        min-height: 3.5rem;
+      }
+      .btn-primary:hover {
+        background: #a07e2e;
+        transform: translateY(-1px);
+      }
+      .btn-outline {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #fff;
+        padding: 0.875rem 1.75rem;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 100px;
+        transition:
+          border-color 0.2s,
+          background 0.2s;
+        min-height: 3.5rem;
+      }
+      .btn-outline:hover {
+        border-color: #b8923e;
+        background: rgba(184, 146, 62, 0.1);
+      }
+      .hero-scroll {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 2rem;
+        height: 3rem;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 1rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-top: 0.5rem;
+        animation: float 2.5s ease-in-out infinite;
+      }
+      .hero-scroll::after {
+        content: "";
+        width: 4px;
+        height: 8px;
+        background: #b8923e;
+        border-radius: 2px;
+        animation: scrollDot 2s ease-in-out infinite;
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(6px);
+        }
+      }
+      @keyframes scrollDot {
+        0%,
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        50% {
+          opacity: 0.3;
+          transform: translateY(8px);
+        }
+      }
 
-.section {
-  padding: 5rem 0;
-}
-.section-dark {
-  background: #2F3133;
-  color: #fff;
-}
-.section-beige {
-  background: #E8E0D2;
-}
-.section-label {
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #9a7a2e;
-  margin-bottom: 1rem;
-}
-.section-dark .section-label,
-.hero-tag {
-  color: #d4af52;
-}
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 600;
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin-bottom: 1rem;
-  color: #2F3133;
-}
-.section-title::after {
-  content: '';
-  display: block;
-  width: 2rem;
-  height: 2px;
-  background: #1F6A3A;
-  margin-top: 0.75rem;
-}
-.section-dark .section-title::after {
-  background: #B8923E;
-}
-.centered-title .section-title::after {
-  margin: 0.75rem auto 0;
-}
-.section-dark .section-title,
-.section-dark .section-text {
-  color: #fff;
-}
-.section-text {
-  font-size: 1.125rem;
-  line-height: 1.7;
-  color: #4a4a4a;
-  max-width: 70ch;
-}
-.section-dark .section-text {
-  color: rgba(255,255,255,0.85);
-}
+      .section {
+        padding: 5rem 0;
+      }
+      .section-dark {
+        background: #2f3133;
+        color: #fff;
+      }
+      .section-beige {
+        background: #e8e0d2;
+      }
+      .section-label {
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #9a7a2e;
+        margin-bottom: 1rem;
+      }
+      .section-dark .section-label,
+      .hero-tag {
+        color: #d4af52;
+      }
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-weight: 600;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+        color: #2f3133;
+      }
+      .section-title::after {
+        content: "";
+        display: block;
+        width: 2rem;
+        height: 2px;
+        background: #1f6a3a;
+        margin-top: 0.75rem;
+      }
+      .section-dark .section-title::after {
+        background: #b8923e;
+      }
+      .centered-title .section-title::after {
+        margin: 0.75rem auto 0;
+      }
+      .section-dark .section-title,
+      .section-dark .section-text {
+        color: #fff;
+      }
+      .section-text {
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: #4a4a4a;
+        max-width: 70ch;
+        font-weight: 300;
+      }
+      .section-dark .section-text {
+        color: rgba(255, 255, 255, 0.85);
+      }
 
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-.about-image {
-  border-radius: 12px;
-  overflow: hidden;
-  aspect-ratio: 4/3;
-}
-.about-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-trust {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-.about-trust-item {
-  text-align: center;
-  padding: 1.5rem;
-  background: rgba(47,49,51,0.03);
-  border-radius: 12px;
-  border: 1px solid rgba(47,49,51,0.08);
-}
-.about-trust-item .number {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #2F3133;
-  display: block;
-}
-.about-trust-item .label {
-  font-size: 0.875rem;
-  color: #4a4a4a;
-  margin-top: 0.25rem;
-}
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+      .about-image {
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+      }
+      .about-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .about-trust {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+      .about-trust-item {
+        text-align: center;
+        padding: 1.5rem;
+        background: rgba(47, 49, 51, 0.03);
+        border-radius: 12px;
+        border: 1px solid rgba(47, 49, 51, 0.08);
+      }
+      .about-trust-item .number {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #2f3133;
+        display: block;
+      }
+      .about-trust-item .label {
+        font-size: 0.875rem;
+        color: #4a4a4a;
+        margin-top: 0.25rem;
+      }
 
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 3rem;
-}
-.gallery-grid img {
-  width: 100%;
-  aspect-ratio: 4/3;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: transform 0.4s ease;
-  cursor: pointer;
-}
-.gallery-grid img:hover {
-  transform: scale(1.03);
-}
-.gallery-grid .tall {
-  aspect-ratio: 4/5;
-}
-.gallery-grid .wide {
-  grid-column: span 2;
-}
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 3rem;
+      }
+      .gallery-grid img {
+        width: 100%;
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.4s ease;
+        cursor: pointer;
+      }
+      .gallery-grid img:hover {
+        transform: scale(1.03);
+      }
+      .gallery-grid .tall {
+        aspect-ratio: 4/5;
+      }
+      .gallery-grid .wide {
+        grid-column: span 2;
+      }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin-top: 3rem;
-}
-.service-card {
-  padding: 2.5rem 2rem;
-  background: rgba(255,255,255,0.06);
-  border-radius: 16px;
-  backdrop-filter: blur(4px);
-  transition: background 0.3s, transform 0.3s;
-}
-.service-card:hover {
-  background: rgba(255,255,255,0.1);
-  transform: translateY(-4px);
-}
-.service-card .icon {
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: 50%;
-  background: rgba(184,146,62,0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-.service-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.35rem;
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-.service-card p {
-  font-size: 0.95rem;
-  line-height: 1.65;
-  color: rgba(255,255,255,0.75);
-}
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+      .service-card {
+        padding: 2.5rem 2rem;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 16px;
+        backdrop-filter: blur(4px);
+        transition:
+          background 0.3s,
+          transform 0.3s;
+      }
+      .service-card:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-4px);
+      }
+      .service-card .icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        background: rgba(184, 146, 62, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+      }
+      .service-card h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.35rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+      }
+      .service-card p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 300;
+      }
 
-.showroom-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-.showroom-image {
-  border-radius: 12px;
-  overflow: hidden;
-  aspect-ratio: 4/3;
-}
-.showroom-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.showroom-info h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-.showroom-info p {
-  font-size: 1.05rem;
-  line-height: 1.7;
-  color: #4a4a4a;
-  margin-bottom: 1.5rem;
-}
-.showroom-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.showroom-contact a {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.05rem;
-  padding: 0.75rem 1.25rem;
-  border-radius: 12px;
-  background: rgba(47,49,51,0.03);
-  border: 1px solid rgba(47,49,51,0.1);
-  transition: background 0.2s, border-color 0.2s;
-}
-.showroom-contact a:hover {
-  background: rgba(47,49,51,0.06);
-  border-color: #2F3133;
-}
-.showroom-contact .icon-circle {
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background: #2F3133;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1rem;
-  flex-shrink: 0;
-}
+      .showroom-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+      .showroom-image {
+        border-radius: 12px;
+        overflow: hidden;
+        aspect-ratio: 4/3;
+      }
+      .showroom-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .showroom-info h3 {
+        font-family: "Playfair Display", serif;
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      .showroom-info p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: #4a4a4a;
+        margin-bottom: 1.5rem;
+        font-weight: 300;
+      }
+      .showroom-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .showroom-contact a {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1.05rem;
+        padding: 0.75rem 1.25rem;
+        border-radius: 12px;
+        background: rgba(47, 49, 51, 0.03);
+        border: 1px solid rgba(47, 49, 51, 0.1);
+        transition:
+          background 0.2s,
+          border-color 0.2s;
+      }
+      .showroom-contact a:hover {
+        background: rgba(47, 49, 51, 0.06);
+        border-color: #2f3133;
+      }
+      .showroom-contact .icon-circle {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        background: #2f3133;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1rem;
+        flex-shrink: 0;
+      }
 
-.cta-section {
-  text-align: center;
-  padding: 6rem 0;
-}
-.cta-section .section-title {
-  font-size: clamp(2rem, 4vw, 3.5rem);
-  margin-bottom: 1rem;
-}
-.cta-section .section-text {
-  margin: 0 auto 2.5rem;
-}
-.cta-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-.cta-phone {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #2F3133;
-  background: #fff;
-  padding: 1rem 2.5rem;
-  border-radius: 100px;
-  transition: transform 0.15s, box-shadow 0.2s;
-  min-height: 3.5rem;
-}
-.cta-phone:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
-}
-.cta-whatsapp {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #fff;
-  background: #25D366;
-  padding: 1rem 2rem;
-  border-radius: 100px;
-  transition: background 0.2s, transform 0.15s;
-  min-height: 3.5rem;
-}
-.cta-whatsapp:hover {
-  background: #1da851;
-  transform: translateY(-2px);
-}
+      .cta-section {
+        text-align: center;
+        padding: 6rem 0;
+      }
+      .cta-section .section-title {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        margin-bottom: 1rem;
+      }
+      .cta-section .section-text {
+        margin: 0 auto 2.5rem;
+      }
+      .cta-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+      .cta-phone {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #2f3133;
+        background: #fff;
+        padding: 1rem 2.5rem;
+        border-radius: 100px;
+        transition:
+          transform 0.15s,
+          box-shadow 0.2s;
+        min-height: 3.5rem;
+      }
+      .cta-phone:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      }
+      .cta-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #fff;
+        background: #25d366;
+        padding: 1rem 2rem;
+        border-radius: 100px;
+        transition:
+          background 0.2s,
+          transform 0.15s;
+        min-height: 3.5rem;
+      }
+      .cta-whatsapp:hover {
+        background: #1da851;
+        transform: translateY(-2px);
+      }
 
-.footer {
-  background: #1a1a1a;
-  color: rgba(255,255,255,0.7);
-  padding: 3rem 0 2rem;
-  border-top: 3px solid #1F6A3A;
-}
-.footer-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 3rem;
-  margin-bottom: 2.5rem;
-}
-.footer-brand img {
-  height: 2.5rem;
-  width: auto;
-  margin-bottom: 1rem;
-}
-.footer-brand p {
-  font-size: 0.95rem;
-  line-height: 1.6;
-  max-width: 360px;
-}
-.footer h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 1.25rem;
-}
-.footer-links {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-.footer-links a {
-  font-size: 0.95rem;
-  color: rgba(255,255,255,0.6);
-  transition: color 0.2s;
-}
-.footer-links a:hover {
-  color: #B8923E;
-}
-.footer-bottom {
-  padding-top: 1.5rem;
-  border-top: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  font-size: 0.85rem;
-}
+      .footer {
+        background: #1a1a1a;
+        color: rgba(255, 255, 255, 0.7);
+        padding: 3rem 0 2rem;
+        border-top: 3px solid #1f6a3a;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 2.5rem;
+      }
+      .footer-brand img {
+        height: 2.5rem;
+        width: auto;
+        margin-bottom: 1rem;
+      }
+      .footer-brand p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        max-width: 360px;
+      }
+      .footer h4 {
+        font-family: "Playfair Display", serif;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 1.25rem;
+      }
+      .footer-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .footer-links a {
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 0.2s;
+      }
+      .footer-links a:hover {
+        color: #b8923e;
+      }
+      .footer-bottom {
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        font-size: 0.85rem;
+      }
 
-@media (max-width: 900px) {
-  .about-grid,
-  .showroom-grid {
-    grid-template-columns: 1fr;
-    gap: 2.5rem;
-  }
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .gallery-grid .wide {
-    grid-column: span 2;
-  }
-  .services-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .about-trust {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+      @media (max-width: 900px) {
+        .about-grid,
+        .showroom-grid {
+          grid-template-columns: 1fr;
+          gap: 2.5rem;
+        }
+        .gallery-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .gallery-grid .wide {
+          grid-column: span 2;
+        }
+        .services-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .about-trust {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
 
-@media (max-width: 640px) {
-  .header-logo span { display: none; }
-  .header-phone { font-size: 0.875rem; padding: 0.4rem 1rem; }
-  .section { padding: 3.5rem 0; }
-  .gallery-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.75rem;
-  }
-  .gallery-grid .wide {
-    grid-column: span 2;
-  }
-  .services-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    text-align: center;
-  }
-  .hero-actions {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .btn-primary, .btn-outline {
-    width: 100%;
-    justify-content: center;
-  }
-  .cta-actions {
-    flex-direction: column;
-    align-items: center;
-  }
-  .cta-phone {
-    font-size: 1.25rem;
-    width: 100%;
-    justify-content: center;
-  }
-  .cta-whatsapp {
-    width: 100%;
-    justify-content: center;
-  }
-}
-</style>
-</head>
-<body>
-
-<header class="header" id="header">
-  <div class="container">
-    <a href="#" class="header-logo">
-      <img src="logo1.jpeg" alt="Cortinas Sergio">
-      <span>Cortinas Sergio</span>
-    </a>
-    <div class="header-cta">
-      <a href="tel:3022344884" class="header-phone">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        302 234 4884
-      </a>
-    </div>
-  </div>
-</header>
-
-<section class="hero" id="inicio">
-  <div class="hero-bg">
-    <img src="IMG_6742.jpeg" alt="Cortinas Sergio — Instalación profesional">
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="container">
-    <div class="hero-content">
-      <span class="hero-tag">Cortinas a medida con instalación</span>
-      <h1>Elegancia que transforma tu hogar</h1>
-      <p>Cortinas de la más alta calidad, diseñadas a la medida de tus ventanas e instaladas por profesionales en toda Colombia.</p>
-      <div class="hero-actions">
-        <a href="tel:3022344884" class="btn-primary">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          Llámanos: 302 234 4884
+      @media (max-width: 640px) {
+        .header-logo span {
+          display: none;
+        }
+        .header-phone {
+          font-size: 0.875rem;
+          padding: 0.4rem 1rem;
+        }
+        .section {
+          padding: 3.5rem 0;
+        }
+        .gallery-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 0.75rem;
+        }
+        .gallery-grid .wide {
+          grid-column: span 2;
+        }
+        .services-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+        .footer-bottom {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-actions {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .btn-primary,
+        .btn-outline {
+          width: 100%;
+          justify-content: center;
+        }
+        .cta-actions {
+          flex-direction: column;
+          align-items: center;
+        }
+        .cta-phone {
+          font-size: 1.25rem;
+          width: 100%;
+          justify-content: center;
+        }
+        .cta-whatsapp {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <a href="#" class="header-logo">
+          <img src="logo1.jpeg" alt="Cortinas Sergio" />
+          <span>Cortinas Sergio</span>
         </a>
-        <a href="#galeria" class="btn-outline">Ver nuestros trabajos</a>
-      </div>
-    </div>
-  </div>
-  <a href="#nosotros" class="hero-scroll" aria-label="Desplázate para ver más"></a>
-</section>
-
-<section class="section" id="nosotros">
-  <div class="container">
-    <div class="about-grid">
-      <div class="about-image">
-        <img src="IMG_6739.jpeg" alt="Showroom Cortinas Sergio">
-      </div>
-      <div>
-        <span class="section-label">Quiénes somos</span>
-        <h2 class="section-title">Expertos en cortinas desde el corazón de Colombia</h2>
-        <p class="section-text">En Cortinas Sergio nos dedicamos a vestir cada ventana con la calidad y el estilo que tu hogar merece. Desde la selección de la tela hasta la instalación final, te acompañamos en cada paso para garantizar un resultado impecable.</p>
-        <div class="about-trust">
-          <div class="about-trust-item">
-            <span class="number">+15</span>
-            <span class="label">años de experiencia</span>
-          </div>
-          <div class="about-trust-item">
-            <span class="number">+500</span>
-            <span class="label">hogares transformados</span>
-          </div>
-          <div class="about-trust-item">
-            <span class="number">100%</span>
-            <span class="label">instalación profesional</span>
-          </div>
-          <div class="about-trust-item">
-            <span class="number">1:1</span>
-            <span class="label">asesoría personalizada</span>
-          </div>
-          <div style="grid-column: 1 / -1; font-size: 0.8rem; color: #8a8a8a; text-align: center; margin-top: 0.5rem;">
-            * Cifras ilustrativas basadas en nuestra trayectoria en el sector
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section-beige" id="galeria">
-  <div class="container">
-    <div class="centered-title" style="text-align: center; margin-bottom: 1rem;">
-      <span class="section-label">Nuestros trabajos</span>
-      <h2 class="section-title">Transformaciones que hablan por sí solas</h2>
-      <p class="section-text" style="margin: 0 auto;">Cada instalación es única. Mira algunos de los hogares que hemos vestido con cortinas de la más alta calidad.</p>
-    </div>
-    <div class="gallery-grid">
-      <img src="IMG_6741.jpeg" alt="Instalación de cortinas — sala" loading="lazy" class="tall">
-      <img src="IMG_6740.jpeg" alt="Cortinas elegantes — comedor" loading="lazy">
-      <img src="IMG_6731.jpeg" alt="Cortinas — detalle de tela y acabado" loading="lazy" class="tall">
-      <img src="IMG_6739.jpeg" alt="Showroom Cortinas Sergio" loading="lazy">
-      <img src="IMG_6742.jpeg" alt="Instalación profesional de cortinas" loading="lazy">
-    </div>
-  </div>
-</section>
-
-<section class="section section-dark" id="servicios">
-  <div class="container">
-    <div class="centered-title" style="text-align: center; margin-bottom: 2rem;">
-      <span class="section-label">Nuestro servicio</span>
-      <h2 class="section-title" style="color: #fff;">Todo lo que necesitas, en un solo lugar</h2>
-      <p class="section-text" style="margin: 0 auto; color: rgba(255,255,255,0.8);">Desde la primera consulta hasta la instalación final, estamos contigo en cada paso.</p>
-    </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8923E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-        </div>
-        <h3>Asesoría personalizada</h3>
-        <p>Te ayudamos a elegir la tela, el color y el estilo perfectos para cada espacio de tu hogar, según tus gustos y necesidades.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8923E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-        </div>
-        <h3>Medición profesional</h3>
-        <p>Tomamos las medidas exactas de tus ventanas para garantizar que tus cortinas queden perfectamente ajustadas y con el mejor acabado.</p>
-      </div>
-      <div class="service-card">
-        <div class="icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#B8923E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        </div>
-        <h3>Instalación garantizada</h3>
-        <p>Nuestro equipo de instalación se encarga de todo con precisión y cuidado. Sin ensuciar, sin complicaciones, sin preocupaciones.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="showroom">
-  <div class="container">
-    <div class="showroom-grid">
-      <div class="showroom-info">
-        <span class="section-label">Visítanos</span>
-        <h2 class="section-title">Conoce nuestro showroom</h2>
-        <p>Te invitamos a visitar nuestro showroom físico donde podrás ver y tocar las telas, conocer los acabados y recibir asesoría personalizada de nuestro equipo.</p>
-        <div class="showroom-contact">
-          <a href="tel:3022344884">
-            <span class="icon-circle">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span>
-            <span><strong>Llámanos:</strong> 302 234 4884</span>
-          </a>
-          <a href="https://wa.me/573022344884" target="_blank" rel="noopener">
-            <span class="icon-circle" style="background: #25D366;">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-            </span>
-            <span><strong>Escríbenos</strong> por WhatsApp</span>
+        <div class="header-cta">
+          <a href="tel:3022344884" class="header-phone">
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            302 234 4884
           </a>
         </div>
       </div>
-      <div class="showroom-image">
-        <img src="IMG_6740.jpeg" alt="Showroom Cortinas Sergio">
-      </div>
-    </div>
-  </div>
-</section>
+    </header>
 
-<section class="section section-dark" id="contacto">
-  <div class="container">
-    <div class="cta-section centered-title">
-      <span class="section-label">Contáctanos</span>
-      <h2 class="section-title" style="color: #fff;">¿Listo para transformar tus ventanas?</h2>
-      <p class="section-text" style="margin: 0 auto 2.5rem; color: rgba(255,255,255,0.85);">Danos un llamado o escríbenos por WhatsApp. Te asesoramos sin compromiso y agendamos una visita a tu hogar.</p>
-      <div class="cta-actions">
-        <a href="tel:3022344884" class="cta-phone">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2F3133" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          302 234 4884
-        </a>
-        <a href="https://wa.me/573022344884" target="_blank" rel="noopener" class="cta-whatsapp">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-          WhatsApp
-        </a>
+    <section class="hero" id="inicio">
+      <div class="hero-bg">
+        <img
+          src="IMG_6742.jpeg"
+          alt="Cortinas Sergio — Instalación profesional"
+        />
       </div>
-    </div>
-  </div>
-</section>
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-tag">Cortinas a medida con instalación</span>
+          <h1>Elegancia que transforma tu hogar</h1>
+          <p>
+            Cortinas de la más alta calidad, diseñadas a la medida de tus
+            ventanas e instaladas por profesionales en toda Colombia.
+          </p>
+          <div class="hero-actions">
+            <a href="tel:3022344884" class="btn-primary">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Llámanos: 302 234 4884
+            </a>
+            <a href="#galeria" class="btn-outline">Ver nuestros trabajos</a>
+          </div>
+        </div>
+      </div>
+      <a
+        href="#nosotros"
+        class="hero-scroll"
+        aria-label="Desplázate para ver más"
+      ></a>
+    </section>
 
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="logo1.jpeg" alt="Cortinas Sergio">
-        <p>Cortinas a medida con instalación profesional en Colombia. Elegancia y calidad para cada ventana de tu hogar.</p>
+    <section class="section" id="nosotros">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <img src="IMG_6739.jpeg" alt="Showroom Cortinas Sergio" />
+          </div>
+          <div>
+            <span class="section-label">Quiénes somos</span>
+            <h2 class="section-title">
+              Expertos en cortinas desde el corazón de Colombia
+            </h2>
+            <p class="section-text">
+              En Cortinas Sergio nos dedicamos a vestir cada ventana con la
+              calidad y el estilo que tu hogar merece. Desde la selección de la
+              tela hasta la instalación final, te acompañamos en cada paso para
+              garantizar un resultado impecable.
+            </p>
+            <div class="about-trust">
+              <div class="about-trust-item">
+                <span class="number">+15</span>
+                <span class="label">años de experiencia</span>
+              </div>
+              <div class="about-trust-item">
+                <span class="number">+500</span>
+                <span class="label">hogares transformados</span>
+              </div>
+              <div class="about-trust-item">
+                <span class="number">100%</span>
+                <span class="label">instalación profesional</span>
+              </div>
+              <div class="about-trust-item">
+                <span class="number">1:1</span>
+                <span class="label">asesoría personalizada</span>
+              </div>
+              <div
+                style="
+                  grid-column: 1 / -1;
+                  font-size: 0.8rem;
+                  color: #8a8a8a;
+                  text-align: center;
+                  margin-top: 0.5rem;
+                "
+              >
+                * Cifras ilustrativas basadas en nuestra trayectoria en el
+                sector
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Contacto</h4>
-        <ul class="footer-links">
-          <li><a href="tel:3022344884">302 234 4884</a></li>
-          <li><a href="https://wa.me/573022344884" target="_blank" rel="noopener">WhatsApp</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Servicios</h4>
-        <ul class="footer-links">
-          <li><a href="#servicios">Asesoría personalizada</a></li>
-          <li><a href="#servicios">Medición profesional</a></li>
-          <li><a href="#servicios">Instalación garantizada</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>&copy; 2026 Cortinas Sergio. Todos los derechos reservados.</span>
-      <span>Colombia</span>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script>
-const header = document.getElementById('header');
-let lastScroll = 0;
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  if (y > 80) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-  lastScroll = y;
-}, { passive: true });
-</script>
+    <section class="section section-beige" id="galeria">
+      <div class="container">
+        <div
+          class="centered-title"
+          style="text-align: center; margin-bottom: 1rem"
+        >
+          <span class="section-label">Nuestros trabajos</span>
+          <h2 class="section-title">
+            Transformaciones que hablan por sí solas
+          </h2>
+          <p class="section-text" style="margin: 0 auto">
+            Cada instalación es única. Mira algunos de los hogares que hemos
+            vestido con cortinas de la más alta calidad.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <img
+            src="IMG_6741.jpeg"
+            alt="Instalación de cortinas — sala"
+            loading="lazy"
+            class="tall"
+          />
+          <img
+            src="IMG_6740.jpeg"
+            alt="Cortinas elegantes — comedor"
+            loading="lazy"
+          />
+          <img
+            src="IMG_6731.jpeg"
+            alt="Cortinas — detalle de tela y acabado"
+            loading="lazy"
+            class="tall"
+          />
+          <img
+            src="IMG_6739.jpeg"
+            alt="Showroom Cortinas Sergio"
+            loading="lazy"
+          />
+          <img
+            src="IMG_6742.jpeg"
+            alt="Instalación profesional de cortinas"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
 
-</body>
+    <section class="section section-dark" id="servicios">
+      <div class="container">
+        <div
+          class="centered-title"
+          style="text-align: center; margin-bottom: 2rem"
+        >
+          <span class="section-label">Nuestro servicio</span>
+          <h2 class="section-title" style="color: #fff">
+            Todo lo que necesitas, en un solo lugar
+          </h2>
+          <p
+            class="section-text"
+            style="margin: 0 auto; color: rgba(255, 255, 255, 0.8)"
+          >
+            Desde la primera consulta hasta la instalación final, estamos
+            contigo en cada paso.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#B8923E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                />
+              </svg>
+            </div>
+            <h3>Asesoría personalizada</h3>
+            <p>
+              Te ayudamos a elegir la tela, el color y el estilo perfectos para
+              cada espacio de tu hogar, según tus gustos y necesidades.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#B8923E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+              </svg>
+            </div>
+            <h3>Medición profesional</h3>
+            <p>
+              Tomamos las medidas exactas de tus ventanas para garantizar que
+              tus cortinas queden perfectamente ajustadas y con el mejor
+              acabado.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#B8923E"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Instalación garantizada</h3>
+            <p>
+              Nuestro equipo de instalación se encarga de todo con precisión y
+              cuidado. Sin ensuciar, sin complicaciones, sin preocupaciones.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="showroom">
+      <div class="container">
+        <div class="showroom-grid">
+          <div class="showroom-info">
+            <span class="section-label">Visítanos</span>
+            <h2 class="section-title">Conoce nuestro showroom</h2>
+            <p>
+              Te invitamos a visitar nuestro showroom físico donde podrás ver y
+              tocar las telas, conocer los acabados y recibir asesoría
+              personalizada de nuestro equipo.
+            </p>
+            <div class="showroom-contact">
+              <a href="tel:3022344884">
+                <span class="icon-circle">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                </span>
+                <span><strong>Llámanos:</strong> 302 234 4884</span>
+              </a>
+              <a
+                href="https://wa.me/573022344884"
+                target="_blank"
+                rel="noopener"
+              >
+                <span class="icon-circle" style="background: #25d366">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+                    />
+                  </svg>
+                </span>
+                <span><strong>Escríbenos</strong> por WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <div class="showroom-image">
+            <img src="IMG_6740.jpeg" alt="Showroom Cortinas Sergio" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contacto">
+      <div class="container">
+        <div class="cta-section centered-title">
+          <span class="section-label">Contáctanos</span>
+          <h2 class="section-title" style="color: #fff">
+            ¿Listo para transformar tus ventanas?
+          </h2>
+          <p
+            class="section-text"
+            style="margin: 0 auto 2.5rem; color: rgba(255, 255, 255, 0.85)"
+          >
+            Danos un llamado o escríbenos por WhatsApp. Te asesoramos sin
+            compromiso y agendamos una visita a tu hogar.
+          </p>
+          <div class="cta-actions">
+            <a href="tel:3022344884" class="cta-phone">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#2F3133"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              302 234 4884
+            </a>
+            <a
+              href="https://wa.me/573022344884"
+              target="_blank"
+              rel="noopener"
+              class="cta-whatsapp"
+            >
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"
+                />
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="logo1.jpeg" alt="Cortinas Sergio" />
+            <p>
+              Cortinas a medida con instalación profesional en Colombia.
+              Elegancia y calidad para cada ventana de tu hogar.
+            </p>
+          </div>
+          <div>
+            <h4>Contacto</h4>
+            <ul class="footer-links">
+              <li><a href="tel:3022344884">302 234 4884</a></li>
+              <li>
+                <a
+                  href="https://wa.me/573022344884"
+                  target="_blank"
+                  rel="noopener"
+                  >WhatsApp</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>Servicios</h4>
+            <ul class="footer-links">
+              <li><a href="#servicios">Asesoría personalizada</a></li>
+              <li><a href="#servicios">Medición profesional</a></li>
+              <li><a href="#servicios">Instalación garantizada</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >&copy; 2026 Cortinas Sergio. Todos los derechos reservados.</span
+          >
+          <span>Colombia</span>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const header = document.getElementById("header");
+      let lastScroll = 0;
+      window.addEventListener(
+        "scroll",
+        () => {
+          const y = window.scrollY;
+          if (y > 80) {
+            header.classList.add("scrolled");
+          } else {
+            header.classList.remove("scrolled");
+          }
+          lastScroll = y;
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
 </html>
